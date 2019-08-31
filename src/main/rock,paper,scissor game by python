@@ -1,0 +1,19 @@
+import random
+
+t=['rock','scissor','paper']
+
+p=(input("enter rock,scissor,paper-"))
+n=t[random.randint(0,2)]
+print("computer choice-",n)
+
+if p=='rock' and n=='scissor' or p=='rock' and n=='paper' or n=='scissor' and p=='paper' :
+  print("<<Computer win>>")
+
+elif n=='rock' and p=='scissor' or  n=='rock' and p=='paper' or p=='scissor' and n=='paper':
+  print("<<you win>>")
+
+elif  n=='rock' and p=='rock' or  n=='paper' and p=='paper' or p=='scissor' and n=='scissor':
+    print("<<Game tie>>")
+
+else:
+    print("your input is wrong")
